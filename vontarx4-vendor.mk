@@ -8,6 +8,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/amlogic/vontarx4/proprietary/product/etc/sysconfig/netflix.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/netflix.xml \
     vendor/amlogic/vontarx4/proprietary/recovery/root/system/etc/mesondisplay.cfg:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/mesondisplay.cfg \
+    vendor/amlogic/vontarx4/proprietary/vendor/etc/bluetooth/bcm4335c0.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bcm4335c0.hcd \
     vendor/amlogic/vontarx4/proprietary/vendor/etc/init/android.hardware.oemlock@1.0-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.oemlock@1.0-service.droidlogic.rc \
     vendor/amlogic/vontarx4/proprietary/vendor/etc/mesondisplay.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mesondisplay.cfg \
     vendor/amlogic/vontarx4/proprietary/vendor/etc/permissions/droidlogic.software.netflix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.software.netflix.xml \
