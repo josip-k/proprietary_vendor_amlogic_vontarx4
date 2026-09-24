@@ -6,6 +6,6 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),vontarx4)
 
-$(call add-radio-file-sha1-checked,radio/bootloader.img,6bcaf7bab5aab0335fe2ed64df56d7028ee22956)
+$(call add-radio-file-sha1-checked,radio/bootloader.img,c8407315fb29eb55fe13a472d9e9af367b5ccf19)
 
 endif
