@@ -1,0 +1,164 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+    imports: [
+        "vendor/amlogic/ne-common",
+    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "libamavutils",
+    owner: "amlogic",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libamavutils.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "libc",
+                "libbinder",
+                "liblog",
+                "libui",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsecmem",
+    owner: "amlogic",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsecmem.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libamavutils",
+                "libcrypto",
+                "libcutils",
+                "libutils",
+                "libz",
+                "libteec",
+                "libmediahal_resman",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHwAudio_dcvdec",
+    owner: "amlogic",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/odm/lib/libHwAudio_dcvdec.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libm",
+                "libc++",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHwAudio_dtshd",
+    owner: "amlogic",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/odm/lib/libHwAudio_dtshd.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.oemlock@1.0-service.droidlogic.xml",
+    owner: "amlogic",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.oemlock@1.0-service.droidlogic.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.oemlock@1.0-service.droidlogic",
+    owner: "amlogic",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.oemlock@1.0-service.droidlogic",
+            ],
+            shared_libs: [
+                "android.hardware.oemlock@1.0",
+                "libbase",
+                "libcutils",
+                "libdumpstateutil",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libsystemcontrolservice",
+                "vendor.amlogic.hardware.systemcontrol@1.0",
+                "vendor.amlogic.hardware.systemcontrol@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
